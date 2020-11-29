@@ -1,12 +1,10 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
-        <!-- <g-link to="/">{{ $static.metadata.siteName }}</g-link> -->
-      </strong>
+        <g-link class="nav__link" to="/">RS</g-link>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/">Blog</g-link>
+        <g-link class="nav__link" to="/about/">Resume</g-link>
       </nav>
     </header>
     <slot/>
@@ -46,5 +44,6 @@ body {
 
 .nav__link {
   margin-left: 20px;
+  text-decoration: none;
 }
 </style>

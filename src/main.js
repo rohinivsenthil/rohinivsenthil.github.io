@@ -5,13 +5,13 @@ import DefaultLayout from '~/layouts/Default.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  library.add(faGithub, faTwitter, faInstagram, faEnvelope)
+  library.add(faGithub, faTwitter, faInstagram, faEnvelope, faLinkedin)
   Vue.component('font-awesome', FontAwesomeIcon)
   head.link.push({
     rel: 'stylesheet',

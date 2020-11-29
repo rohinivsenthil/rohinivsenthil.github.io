@@ -1,45 +1,34 @@
 <template>
   <Layout>
     <div class="common">
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
-    <div class="wrap">
-      <div class="message">
-    <div class="subtext">This is me</div>
+      <div class="wrap">
+        <TextBubble message="This is me" :sender="false"/>
+        <div class="name">Rohini Senthil</div>
+        <div class="tagline">Software <div style="color: rgb(101, 152, 147); font-weight: 600">Developer</div> and Self-taught <div style="color: rgb(187, 100, 97); font-weight: 600">Artist</div></div>
+        <div class="align">
+          <TextBubble message="Let's get in touch" :sender="true"/>
+          <SocialLinks />
+        </div>
+      </div>
     </div>
-    <div class="name">Rohini Senthil</div>
-    <div class="tagline">Software <div style="color: #03a9f4">Developer</div> and Self-taught <div style="color: #03a9f4">Artist</div></div>
-   <div class="align">
-    <div class="message2">
-    <div class="subtext2">Let's get in touch</div>
-    </div>
-    <div class="icons">
-      <font-awesome :icon="['fab', 'github']" style="margin: 6px; font-size: 22px" title="Github"/>
-      <font-awesome :icon="['fab', 'twitter']" style="margin: 6px; font-size: 22px" title="Twitter"/>
-      <font-awesome :icon="['fab', 'instagram']" style="margin: 6px; font-size: 22px" title="Instagram"/>
-      <font-awesome :icon="['fas', 'envelope']" style="margin: 6px 0px 6px 6px; font-size: 22px" title="Mail"/>
-    </div>
-    </div>
-    </div>
-    </div>
-
   </Layout>
 </template>
 
 <script>
+import TextBubble from '../components/TextBubble.vue';
+import SocialLinks from '../components/SocialLinks.vue'
 export default {
   metaInfo: {
     title: 'Rohini Senthil'
+  },
+  components: {
+    TextBubble,
+    SocialLinks,
   }
 }
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
-
 .common{
   display: flex;
   justify-content: center;
@@ -57,14 +46,11 @@ export default {
   font-weight: 700;
 }
 
-.icons {
-  margin-top: 6px;
-}
-
 .tagline {
   display: flex;
   white-space: pre;
   color: #757575;
+  margin-bottom: 16px;
 }
 .align {
   display: flex;
@@ -72,38 +58,7 @@ export default {
   align-items: flex-end;
 }
 
-.subtext{
-  font-size: 12px;
-  font-weight: 500;
-  width:fit-content;
-}
-
 .wrap {
   width: 100%;
 }
-
-.message {
-  background-color: #e0e0e0;
-  padding: 8px;
-  border-radius: 10px 15px 15px 0px;
-  color: black;
-  width: fit-content;
-}
-
-.subtext2{
-  font-size: 13px;
-  font-weight: 500;
-  width:fit-content;
-}
-
-.message2 {
-  margin-top: 16px;
-  background-color: #03a9f4;
-  padding: 10px;
-  border-radius: 15px 10px 0px 15px;
-  color: white;
-  width: fit-content;
-  /* text-decoration: underline; */
-}
-
 </style>
