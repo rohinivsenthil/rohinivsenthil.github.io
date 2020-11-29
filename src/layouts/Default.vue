@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <header class="header">
-        <g-link class="nav__link" to="/">RS</g-link>
+        <g-link to="/" style="text-decoration: none; color:  rgb(187, 100, 97);">About</g-link>
       <nav class="nav">
         <g-link class="nav__link" to="/">Blog</g-link>
         <g-link class="nav__link" to="/about/">Resume</g-link>
@@ -45,5 +45,6 @@ body {
 .nav__link {
   margin-left: 20px;
   text-decoration: none;
+  color: rgb(101, 152, 147);
 }
 </style>
