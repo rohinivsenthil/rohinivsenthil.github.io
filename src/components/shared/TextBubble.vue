@@ -18,7 +18,7 @@ export default {
 .text-wrapper-reciever {
   background-color: rgb(101, 152, 147);
   padding: 8px;
-  border-radius: 10px 15px 15px 0px;
+  border-radius: 10px 16px 16px 0px;
   color: white;
   width: fit-content;
 }
@@ -27,7 +27,7 @@ export default {
 .text-wrapper-sender {
   background-color: rgb(187, 100, 97);
   padding: 10px;
-  border-radius: 15px 10px 0px 15px;
+  border-radius: 16px 10px 0px 16px;
   color: white;
   width: fit-content;
 }

@@ -24,20 +24,15 @@ export default {}
 
 <style>
 .social-links {
-  margin: 6px;
+  margin: 6px 0px 6px 0px;
   cursor: pointer;
 }
 
 .social-icon {
-  margin: 6px; 
-  font-size: 28px;
+  margin: 6px 0px 6px 18px; 
+  font-size: 24px;
   color: #616161;
   transition: .3s;
-}
-
-.social-icon:last-child {
-  margin: 6px 0px 6px 6px;
-  color: #616161;
 }
 
 .github:hover {

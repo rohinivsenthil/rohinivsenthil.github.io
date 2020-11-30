@@ -28,7 +28,7 @@ body {
 }
 
 .layout {
-  max-width: 760px;
+  max-width: 800px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
