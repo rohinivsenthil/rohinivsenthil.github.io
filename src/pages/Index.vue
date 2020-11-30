@@ -1,13 +1,20 @@
 <template>
   <Layout>
-    <div class="common">
-      <div class="wrap">
+    <div class="index-container">
+      <div class="section-wrapper">
         <TextBubble message="This is me" :sender="false"/>
-        <div class="name">Rohini Senthil</div>
-        <div class="tagline">Software <div style="color: rgb(101, 152, 147); font-weight: 600">Developer</div> and Self-taught <div style="color: rgb(187, 100, 97); font-weight: 600">Artist</div></div>
-        <div class="align">
+        <NameWithTagline />
+        <div class="align-to-right">
           <TextBubble message="Let's get in touch" :sender="true"/>
           <SocialLinks />
+        </div>
+      </div>
+      <div class="section-wrapper">
+        <TextBubble message="More about what I do" :sender="false"/>
+      </div>
+      <div class="section-wrapper">
+        <div class="align-to-right">
+          <TextBubble message="Behind the screen" :sender="true"/>
         </div>
       </div>
     </div>
@@ -16,7 +23,8 @@
 
 <script>
 import TextBubble from '../components/TextBubble.vue';
-import SocialLinks from '../components/SocialLinks.vue'
+import SocialLinks from '../components/SocialLinks.vue';
+import NameWithTagline from '../components/NameWithTagline';
 export default {
   metaInfo: {
     title: 'Rohini Senthil'
@@ -24,41 +32,32 @@ export default {
   components: {
     TextBubble,
     SocialLinks,
+    NameWithTagline
   }
 }
 </script>
 
 <style>
-.common{
+.index-container{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+}
+
+.section-wrapper {
+  width: 100%;
   border-width: 0px 0px 2px 0px;
-  border-color: #e0e0e0;
+  border-color: #eeeeee;
   border-style: solid;
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
-.name{
-  font-size: 52px;
-  font-weight: 700;
-}
-
-.tagline {
-  display: flex;
-  white-space: pre;
-  color: #757575;
-  margin-bottom: 16px;
-}
-.align {
+.align-to-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-
-.wrap {
-  width: 100%;
 }
 </style>
