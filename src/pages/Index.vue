@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import TextBubble from '../components/TextBubble.vue';
-import SocialLinks from '../components/SocialLinks.vue';
-import NameWithTagline from '../components/NameWithTagline';
+import TextBubble from '../components/shared/TextBubble.vue';
+import SocialLinks from '../components/shared/SocialLinks.vue';
+import NameWithTagline from '../components/index/NameWithTagline';
 export default {
   metaInfo: {
     title: 'Rohini Senthil'
@@ -51,8 +51,8 @@ export default {
   border-width: 0px 0px 2px 0px;
   border-color: #eeeeee;
   border-style: solid;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .align-to-right {

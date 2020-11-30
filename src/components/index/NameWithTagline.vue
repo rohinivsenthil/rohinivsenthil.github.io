@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="display-name">Rohini Senthil</div>
-    <div class="display-tagline">Software 
-      <div class="green-text-highlight"> Developer</div> and Self-taught 
+    <div class="display-tagline">Software
+      <div class="green-text-highlight"> Developer</div> and Self-taught
       <div class="red-text-highlight"> Artist</div>
     </div>
   </div>
