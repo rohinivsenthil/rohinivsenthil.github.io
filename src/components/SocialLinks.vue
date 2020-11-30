@@ -1,10 +1,20 @@
 <template>
     <div class="social-links">
-      <font-awesome :icon="['fab', 'github']" class="social-icon github" title="Github"/>
-      <font-awesome :icon="['fab', 'twitter']" class="social-icon twitter" title="Twitter"/>
-      <font-awesome :icon="['fab', 'instagram']" class="social-icon instagram" title="Instagram"/>
-      <font-awesome :icon="['fab', 'linkedin']" class="social-icon linkedin" title="LinkedIn"/>
-      <font-awesome :icon="['far', 'envelope']" class="social-icon mail" title="Mail"/>
+      <a href="https://github.com/rohinivsenthil" target="_blank">
+        <font-awesome :icon="['fab', 'github']" class="social-icon github" title="Github" />
+      </a>
+      <a href="https://twitter.com/rohvsenthil" target="_blank">
+        <font-awesome :icon="['fab', 'twitter']" class="social-icon twitter" title="Twitter"/>
+      </a>
+      <a href="https://instagram.com/rohuehue" target="_blank">
+        <font-awesome :icon="['fab', 'instagram']" class="social-icon instagram" title="Instagram"/>
+      </a>
+      <a href="https://www.linkedin.com/in/rohini-senthil-838389176/" target="_blank">
+        <font-awesome :icon="['fab', 'linkedin']" class="social-icon linkedin" title="LinkedIn"/>
+      </a>
+      <a href="mailto:rohinivsenthil@gmail.com" target="_blank">
+        <font-awesome :icon="['far', 'envelope']" class="social-icon mail" title="Mail"/>
+      </a>
     </div>
 </template>
 
@@ -20,14 +30,13 @@ export default {}
 
 .social-icon {
   margin: 6px; 
-  font-size: 30px;
+  font-size: 28px;
   color: #616161;
-  transition: .4s;
+  transition: .3s;
 }
 
 .social-icon:last-child {
   margin: 6px 0px 6px 6px;
-  font-size: 30px;
   color: #616161;
 }
 
