@@ -1,32 +1,51 @@
 <template>
   <div class="bts-wrapper">
-    <div class="bts-image"/>
+    <div class="bts-image">
+      <g-image src="~/buffer.png" width="300"/>
+    </div>
     <div class="bts-content">
-      I'm a self-taught artist with both tradional and digital art.
-      <!-- <span class="text-highlight">McKinsey Digital Labs.</span> -->
+      <TextBubble message="Behind the screen" :sender="true"/>
+      <div class="bts-text">
+        I'm a self-taught artist practicing both traditional and digital art in my leisure time. Check out the
+        <span class="text-highlight">gallery</span>
+        to view my recent works.
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import TextBubble from '../shared/TextBubble.vue';
+export default {
+  components: {
+    TextBubble
+  }
+}
 </script>
 
 <style>
 .bts-wrapper {
-  width: 100%;
   display: flex;
-  padding: 20px 0px 20px 0px;
+  flex-wrap: wrap-reverse;
   color: #757575;
   font-size: 16px;
 }
 
 .bts-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   flex: 1;
   text-align: end;
 }
 
+.bts-text {
+  padding: 20px 0px 20px 0px;
+}
+
 .bts-image {
+  display: flex;
   flex: 1;
 }
 

@@ -11,15 +11,11 @@
       </div>
       <Separator/>
       <div class="section-wrapper">
-        <TextBubble message="More about what I do" :sender="false"/>
         <WhatIDo/>
       </div>
       <Separator/>
       <div class="section-wrapper">
-        <div class="align-to-right">
-          <TextBubble message="Behind the screen" :sender="true"/>
           <BehindTheScreen/>
-        </div>
       </div>
     </div>
   </Layout>
@@ -58,7 +54,7 @@ export default {
 
 .section-wrapper {
   width: 100%;
-  padding: 100px 0px 100px 0px;
+  padding: 80px 0px 80px 0px;
 }
 
 .align-to-right {
