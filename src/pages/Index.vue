@@ -30,7 +30,7 @@ import WhatIDo from '../components/index/WhatIDo';
 import BehindTheScreen from '../components/index/BehindTheScreen';
 export default {
   metaInfo: {
-    title: 'Rohini Senthil'
+    title: 'About'
   },
   components: {
     TextBubble,

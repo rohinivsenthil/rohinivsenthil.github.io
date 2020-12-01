@@ -4,12 +4,18 @@
       <TextBubble message="More about what I do" :sender="false"/>
       <div class="wid-text">
         I'm an enthusiastic full stack software developer from Bangalore, India – currently working at
-        <span class="text-highlight">McKinsey Digital Labs.</span>
+        <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/how-we-help-clients" target="_blank" class="external-link">
+          <span class="text-highlight">McKinsey Digital Labs.</span>
+        </a>
         Check out the recent
-        <span class="text-highlight">projects</span>
-        I'm working on and
-        <span class="text-highlight">blogs</span>
-        I've written yada yada. 
+        <a href="https://github.com/rohinivsenthil" target="_blank" class="external-link">
+          <span class="text-highlight">projects</span>
+        </a>
+        I've been working on and
+        <a href="/blog" class="external-link">
+          <span class="text-highlight">blogs</span>
+        </a>
+        I've written. 
       </div>
     </div>
     <div class="wid-image">
@@ -55,5 +61,9 @@ export default {
 .text-highlight {
   color: #424242; 
   font-weight: 600;
+}
+
+.external-link{
+  text-decoration: none;
 }
 </style>
