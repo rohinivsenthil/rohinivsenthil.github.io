@@ -5,6 +5,11 @@
       <div class="wid-text">
         I'm an enthusiastic full stack software developer from Bangalore, India – currently working at
         <span class="text-highlight">McKinsey Digital Labs.</span>
+        Check out the recent
+        <span class="text-highlight">projects</span>
+        I'm working on and
+        <span class="text-highlight">blogs</span>
+        I've written yada yada. 
       </div>
     </div>
     <div class="wid-image">

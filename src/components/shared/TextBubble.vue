@@ -17,7 +17,7 @@ export default {
 /** Left: Green bubble */
 .text-wrapper-reciever {
   background-color: rgb(101, 152, 147);
-  padding: 8px;
+  padding: 10px;
   border-radius: 10px 16px 16px 0px;
   color: white;
   width: fit-content;

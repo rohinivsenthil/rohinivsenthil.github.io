@@ -3,11 +3,14 @@
     <header class="header">
         <g-link to="/" style="text-decoration: none; color:  rgb(187, 100, 97);">About</g-link>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Blog</g-link>
-        <g-link class="nav__link" to="/about/">Resume</g-link>
+        <g-link class="nav__link" to="/blog">Blog</g-link>
+        <g-link class="nav__link" to="/resume">Resume</g-link>
       </nav>
     </header>
     <slot/>
+    <footer class="footer">
+      © 2020 Rohini Senthil.  All rights reserved.
+    </footer>
   </div>
 </template>
 
@@ -46,5 +49,13 @@ body {
   margin-left: 20px;
   text-decoration: none;
   color: rgb(101, 152, 147);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 11px;
+  color: #bdbdbd;
 }
 </style>
