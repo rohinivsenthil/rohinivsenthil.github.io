@@ -1,10 +1,10 @@
 <template>
   <div class="layout">
     <header class="header">
-        <g-link to="/" style="text-decoration: none; color:  rgb(187, 100, 97);">About</g-link>
+        <g-link to="/" :class="path == '' ? 'active-link' : 'default-link'">About</g-link>
       <nav class="nav">
-        <g-link class="nav__link" to="/blog">Blog</g-link>
-        <g-link class="nav__link" to="/resume">Resume</g-link>
+        <g-link :class="path == 'blog' ? 'space active-link' : 'space default-link'" to="/blog">Blog</g-link>
+        <g-link :class="path == 'resume' ? 'space active-link' : 'space default-link'" to="/resume">Resume</g-link>
       </nav>
     </header>
     <slot/>
@@ -13,6 +13,18 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+
+  data() {
+    const pathArray = window.location.pathname.split( '/' );
+    return {
+      path: pathArray[1],
+    }
+  }
+}
+</script>
 
 <static-query>
 query {
@@ -45,10 +57,13 @@ body {
   height: 80px;
 }
 
-.nav__link {
-  margin-left: 20px;
+.default-link {
   text-decoration: none;
   color: rgb(101, 152, 147);
+}
+
+.space {
+  margin-left: 20px;
 }
 
 .footer {
@@ -58,4 +73,10 @@ body {
   font-size: 11px;
   color: #bdbdbd;
 }
+
+.active-link {
+  color: rgb(187, 100, 97);
+  text-decoration: none;
+}
+
 </style>
