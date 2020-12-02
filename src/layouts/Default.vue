@@ -16,11 +16,11 @@
 
 <script>
 export default {
-
   data() {
-    const pathArray = window.location.pathname.split( '/' );
+    // const pathArray = window.location.pathname.split( '/' );
     return {
-      path: pathArray[1],
+      // path: pathArray[1],
+      path: '',
     }
   }
 }
