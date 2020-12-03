@@ -1,7 +1,7 @@
 <template>
   <div class="bts-wrapper">
-    <div class="bts-image">
-      <g-image src="~/bts-image.png" width="380"/>
+    <div class="bts-image-wrapper">
+      <g-image class="bts-image" src="~/bts-image.png" width="380"/>
     </div>
     <div class="bts-content">
       <TextBubble message="Behind the screen" :sender="true"/>
@@ -44,8 +44,12 @@ export default {
   padding: 20px 0px 20px 0px;
 }
 
-.bts-image {
+.bts-image-wrapper {
   display: flex;
   flex: 1;
+}
+
+.bts-image {
+  transform: rotate(1.5deg);
 }
 </style>
