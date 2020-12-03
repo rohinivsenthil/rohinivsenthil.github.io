@@ -1,7 +1,7 @@
 <template>
   <div class="bts-wrapper">
     <div class="bts-image">
-      <g-image src="~/buffer.png" width="300"/>
+      <g-image src="~/bts-image.png" width="380"/>
     </div>
     <div class="bts-content">
       <TextBubble message="Behind the screen" :sender="true"/>
