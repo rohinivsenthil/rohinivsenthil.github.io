@@ -1,10 +1,10 @@
 <template>
   <div class="layout">
     <header class="header">
-        <g-link to="/" :class="path == '' ? 'active-link' : 'default-link'">About</g-link>
+        <g-link to="/" :class="path == '/' ? 'active-link' : 'default-link'">About</g-link>
       <nav class="nav">
-        <g-link :class="path == 'blog' ? 'space active-link' : 'space default-link'" to="/blog">Blog</g-link>
-        <g-link :class="path == 'resume' ? 'space active-link' : 'space default-link'" to="/resume">Resume</g-link>
+        <g-link :class="path == '/blog' ? 'space active-link' : 'space default-link'" to="/blog">Blog</g-link>
+        <g-link :class="path == '/resume' ? 'space active-link' : 'space default-link'" to="/resume">Resume</g-link>
       </nav>
     </header>
     <slot/>
@@ -17,10 +17,9 @@
 <script>
 export default {
   data() {
-    // const pathArray = window.location.pathname.split( '/' );
+    const path = process.isClient ? global.location.pathname : '';
     return {
-      // path: pathArray[1],
-      path: '',
+      path,
     }
   }
 }
