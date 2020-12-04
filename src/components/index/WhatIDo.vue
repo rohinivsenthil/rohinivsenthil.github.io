@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="wid-image">
-      <g-image src="~/buffer.png" width="300"/>
+      <!-- <g-image src="~/buffer.png" width="300"/> -->
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="bts-wrapper">
     <div class="bts-image-wrapper">
-      <g-image class="bts-image" src="~/bts-image.png" width="420"/>
+      <!-- <g-image class="bts-image" src="~/bts-image.png" width="420"/> -->
     </div>
     <div class="bts-content">
       <TextBubble message="Behind the screen" :sender="true"/>
@@ -52,5 +52,7 @@ export default {
 
 .bts-image {
   transform: rotate(1.5deg);
+  /* -webkit-filter: drop-shadow(2px 2px 2px rgb(184, 183, 183));
+  filter: drop-shadow(2px 2px 2px rgb(198, 191, 191)); */
 }
 </style>
