@@ -45,7 +45,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
+  flex: 2;
 }
 
 .wid-text {
