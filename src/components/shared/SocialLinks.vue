@@ -24,6 +24,9 @@ export default {}
 
 <style>
 .social-links {
+  display: flex;
+  align-items: center;
+  height: 36px;
   margin: 6px 0px 6px 0px;
   cursor: pointer;
 }
@@ -33,6 +36,10 @@ export default {}
   font-size: 24px;
   color: #616161;
   transition: .3s;
+}
+
+.social-icon:hover {
+  font-size: 30px;
 }
 
 .github:hover {
