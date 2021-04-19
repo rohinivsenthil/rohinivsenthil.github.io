@@ -2,10 +2,10 @@
   <div class="layout">
     <header class="header">
         <g-link to="/" :class="path == '/' ? 'active-link' : 'default-link'">About</g-link>
-      <nav class="nav">
+      <!-- <nav class="nav">
         <g-link :class="path == '/blog' ? 'space active-link' : 'space default-link'" to="/blog">Blog</g-link>
         <g-link :class="path == '/resume' ? 'space active-link' : 'space default-link'" to="/resume">Resume</g-link>
-      </nav>
+      </nav> -->
     </header>
     <slot/>
     <footer class="footer">

@@ -11,11 +11,12 @@
         <a href="https://github.com/rohinivsenthil" target="_blank" class="external-link">
           <span class="text-highlight">projects</span>
         </a>
-        I've been working on and
+        I've been working on. 
+        <!-- and
         <a href="/blog" class="external-link">
           <span class="text-highlight">blogs</span>
         </a>
-        I've written. 
+        I've written.  -->
       </div>
     </div>
     <div class="wid-image">

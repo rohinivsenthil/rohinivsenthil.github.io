@@ -6,9 +6,10 @@
     <div class="bts-content">
       <TextBubble message="Behind the screen" :sender="true"/>
       <div class="bts-text">
-        I'm a self-taught artist who's passionate about creating both traditional and digital art in my leisure time. Check out the
+        I'm a self-taught artist who's passionate about creating both traditional and digital art in my leisure time. 
+        <!-- Check out the
         <span class="text-highlight">gallery</span>
-        to view my recent works.
+        to view my recent works. -->
       </div>
     </div>
   </div>
