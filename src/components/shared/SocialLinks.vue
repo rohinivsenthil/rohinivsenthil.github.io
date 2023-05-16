@@ -3,12 +3,6 @@
       <a href="https://github.com/rohinivsenthil" target="_blank">
         <font-awesome :icon="['fab', 'github']" class="social-icon github" title="Github" />
       </a>
-      <a href="https://twitter.com/rohvsenthil" target="_blank">
-        <font-awesome :icon="['fab', 'twitter']" class="social-icon twitter" title="Twitter"/>
-      </a>
-      <a href="https://instagram.com/rohuehue" target="_blank">
-        <font-awesome :icon="['fab', 'instagram']" class="social-icon instagram" title="Instagram"/>
-      </a>
       <a href="https://www.linkedin.com/in/rohini-senthil-838389176/" target="_blank">
         <font-awesome :icon="['fab', 'linkedin']" class="social-icon linkedin" title="LinkedIn"/>
       </a>
